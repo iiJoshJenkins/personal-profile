@@ -1,0 +1,171 @@
+/*
+    GLOBAL
+*/
+
+@font-face {
+    font-family: "kurale";
+    src: url("fonts/Kurale-Regular.ttf");
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: kurale, helvetica, arial;
+    overflow-x: hidden;
+}
+
+img, embed, object, video {
+    max-width: 100%;
+}
+
+a {
+    font-size: 16px;
+}
+
+a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+/*
+    HEADER
+*/
+
+.header_menu {
+    width: 100%;
+    padding: 5px;
+    background-color: #7d97ad;
+}
+
+.header_menu .menu_icon {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.header_menu .icon_text {
+    color: white;
+    vertical-align: 20%;
+}
+
+.header_inner {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #7d97ad;
+}
+
+.header_logo {
+    width: 20%;
+    height: 75px;
+    margin-right: 0.1em;
+    margin-left: 0.3em;
+}
+
+.header_title_container {
+    margin: 0;
+    padding: 10px;
+    width: 70%;
+}
+
+.header_title {
+    font-size: 1.5em;
+    display: inline-block;
+    color: #212;
+    text-align: right;
+    width: 100%;
+    margin: 0;
+    vertical-align: bottom;
+}
+
+.header_subtitle{
+    font-size: 0.75em;
+    margin: 0;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+/*
+    NAV
+*/
+.nav_open {
+    width: 250px !important;
+}
+
+.nav {
+    width: 0;
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2d3c49;
+    -webkit-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+    margin-top: 10%    ;
+    padding: 0;
+}
+
+.nav_list {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_list .nav_item {
+    width: 100%;
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: left;
+    display: block;
+    padding: 8px 8px 8px 32px;
+}
+
+.nav_list .nav_item:last-of-type {
+    border: none;
+}
+
+.nav_list .nav_item a:visited {
+    color: white;
+}
+.nav_list .nav_item a:active {
+    color: grey;
+}
+
+/*
+    MAIN
+*/
+
+.main_content {
+    padding: 5px;
+    width: 100%;
+}
+
+.showcase_image {
+    width: calc(96% - 30px);
+    margin: 2%;
+    padding: 10px;
+    background: no-repeat center/100% url("../img/placeholder_image.svg");
+}
+
+.description {
+    padding: 0;
+    margin: 150px 0 0 0;
+    vertical-align: bottom;
+}
+
+.description h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.description p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}

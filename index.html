@@ -6,29 +6,90 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Home</title>
         <!-- Either add different css pages for each breakpoint or have one and do the break points in that? -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet"  href="css/main_small.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/mobile_nav.js"></script>
     </head>
     <body>
         <header class="header">
+            <div class="header_menu">
+                <a>
+                    <img src="img/menu_icon.svg" alt="Menu Icon" class="menu_icon">
+                    <span class="icon_text"> Menu </span>
+                </a>
+            </div>
             <div class="header_inner">
                 <img class="header_logo" src="img/pp_logo.svg" alt="Joshua Jenkins logo">
                 <div class="header_title_container">
-                    <h1 class="header_title">
-                        JOSHUA JENKINS
-                    </h1>
-                    <h6 class="header_subtitle">
-                        FRONT-END NINJA
-                    </h6>
+                    <h1 class="header_title"> JOSHUA JENKINS </h1>
+                    <h6 class="header_subtitle"> FRONT-END NINJA </h6>
                 </div>
             </div>
         </header>
 
-        <!-- I may remove this later, but I think having a nav is the best thing for me -->
-        <nav>
-            <!-- TODO: add a menu button for when the screen is small -->
+        <nav class="nav">
+            <!-- TODO: Make the links actually go somewhere -->
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a href="#"> Home </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#"> Portfolio </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#"> About </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#"> Contact </a>
+                </li>
+            </ul>
         </nav>
 
         <main>
+            <section class="main_content">
+                <!-- TODO: Image carousel maybe? -->
+                <section class="showcase_image">
+                    <article class="description">
+                        <!-- TODO: Change the header and description text -->
+                        <h2> Image Title </h2>
+                        <p> Depart do be so he enough talent.</p>
+                    </article>
+                </section>
+            </section>
+
+            <section class="featured_work">
+                <h2 class="featured_work_title">
+                    Featured Work
+                </h2>
+                <!-- TODO: Actually populate the featured work list with featured work -->
+                <ul class="featured_work_list">
+                    <li class="featured_work_item">
+                        <div class="item_image">
+                            <img src="img/placeholder_image.svg" alt="placeholder image for featured work">
+                        </div>
+                        <h3 class="item_title"> Placeholder </h3>
+                        <p class="item_description"> Depart do be so he enough talent.</p>
+
+                    </li>
+                    <li class="featured_work_item">
+                        <div class="item_image">
+                            <img src="img/placeholder_image.svg" alt="placeholder image for featured work">
+                        </div>
+                        <h3 class="item_title"> Placeholder </h3>
+                        <p class="item_description"> Depart do be so he enough talent.</p>
+                    </li>
+                    <li class="featured_work_item">
+                        <div class="item_image">
+                            <img src="img/placeholder_image.svg" alt="placeholder image for featured work">
+                        </div>
+                        <h3 class="item_title"> Placeholder </h3>
+                        <p class="item_description"> Depart do be so he enough talent.</p>
+                    </li>
+                </ul>
+            </section>
         </main>
 
         <footer>
