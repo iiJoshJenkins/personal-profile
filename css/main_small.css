@@ -212,3 +212,7 @@ footer {
     border-top: 2px solid #7d97ad;
     font-size: 14px;
 }
+
+footer p {
+    margin-right: 10px;
+}
