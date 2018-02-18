@@ -1,3 +1,10 @@
-body {
-    background-color: red;
+/*
+    MAIN
+*/
+
+.featured_work_list {
+}
+
+.featured_work_item {
+    display: block;
 }
