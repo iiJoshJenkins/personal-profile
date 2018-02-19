@@ -2,9 +2,18 @@
     MAIN
 */
 
-.featured_work_list {
+.description h2 {
+    font-size: 20px;
 }
 
-.featured_work_item {
-    display: block;
+.description p {
+    font-size: 16px;
+}
+
+.featured_work .item_info h3 {
+    font-size: 20px;
+}
+
+.featured_work .item_info p {
+    font-size: 16px;
 }
